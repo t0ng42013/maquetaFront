@@ -1,0 +1,252 @@
+* {
+  overflow: hidden;
+  font-size: 14px;
+  color: aliceblue;
+ 
+}
+
+.card_mobile,
+.nav_mobile {
+  visibility: visible;
+  display: flex;
+  margin-left: 1vw;
+}
+/* navegacion desktop */
+main nav {
+  display: none;
+}
+.parallax,
+.proyect {
+  display: none;
+}
+.logo_mobile {
+  display: none;
+}
+header {
+     min-width: 380px;
+  background: rgb(0, 0, 0);
+  width: 100vw;
+  height: 50vh;
+  vertical-align: middle;
+  border-top-left-radius: 0.5rem;
+}
+
+/* navbar */
+.mobile_nav {
+  background: rgb(0, 0, 0);
+  width: 80vw;
+  
+  margin-top: 3.5vh;
+  position: static;
+  
+}
+.img_argp{
+  filter: invert(.9);
+  width: 120px;
+}
+.btnContras{
+    visibility: hidden;
+}
+
+/* logueo */
+.fa-brands{
+    font-size: 1rem;
+}
+
+.redes_mobile{
+position: fixed;
+right: 0;
+top:6vw;
+display: flex;
+flex-direction: column;
+height: 32vw;
+width: 40px;
+border: 1px solid red;
+border-radius: 2px;
+}
+i:hover{
+    color: cadetblue;
+}
+/* iconos redes */
+.icon-addthis {
+  display: none;
+}
+/* scroll card */
+.scroll {
+  overflow-y: scroll;
+}
+
+.card {
+  margin-bottom: 0 !important;
+  max-width: 90vw;
+  min-width: 400px;
+  min-width: 380px;
+  max-height: 100vw;
+  margin: 0 6vw !important;
+  padding: 0 !important;
+  background: transparent;
+  top: 14vh;
+}
+
+.card_body {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.card:hover {
+  background: linear-gradient(270deg, var(--grad-1) 0%, var(--grad-2) 100%);
+  background-clip: text;
+  transition: all 0.5s ease-in-out;
+  transform: translate(0, -5px);
+}
+
+main {
+  background: rgb(0, 0, 0);
+  width: 100vw;
+  height: 50vh;
+  position: relative;
+  border-bottom-right-radius: 0.5rem;
+}
+
+main h1 {
+  visibility: hidden;
+  width: 1%;
+  margin: 0;
+}
+
+.nombre_mobile {
+  position: relative;
+  background: #000;
+  width: 31rem;
+  margin: 6vw;
+  margin-top: 3rem !important;
+}
+
+.nombre_mobile::after {
+  content: "";
+  background: linear-gradient(270deg, var(--grad-1) 0%, var(--grad-2) 100%);
+  border-top-left-radius: 8px;
+  height: 30%;
+  width: 1%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.nombre_mobile::before {
+  content: "";
+  background: linear-gradient(270deg, var(--grad-1) 0%, var(--grad-2) 100%);
+  border-top-left-radius: 8px;
+  height: 2%;
+  width: 15%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.nav_mobile > .nav {
+  margin: 3vw 1vw;
+  color: aliceblue !important;
+  border: black;
+}
+
+.nav-link.active,
+.nav-link:focus,
+.nav-link:hover {
+  background: none !important;
+  border: black;
+}
+
+.btn_mobile {
+  position: relative;
+  background: #000;
+  padding: 0.5rem;
+  margin: 0.2rem;
+  border: none;
+}
+.btn_mobile::after {
+  content: "";
+  width: 100%;
+  height: 5%;
+  background: linear-gradient(270deg, var(--grad-1) 0%, var(--grad-2) 100%);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.btn_mobile:hover {
+  border-radius: 0.5rem 0 0.3rem;
+  background: linear-gradient(270deg, var(--grad-3) 0%, var(--grad-4) 100%);
+}
+.btn_mobile:focus {
+  border-radius: 0.5rem 0 0.3rem;
+  background-color: rgba(244, 232, 237, 0.053);
+}
+main nav {
+  margin-left: 5% !important;
+}
+.nav {
+  flex-direction: column;
+}
+.deco {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.deco2 {
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.card_desktop {
+  display: none;
+  visibility: hidden;
+}
+
+svg {
+  display: block;
+  position: absolute;
+}
+.gradient1 {
+  stop-color: var(--grad-1);
+  transition: all 0.3s ease-in-out;
+}
+
+.gradient2 {
+  stop-color: var(--grad-2);
+  transition: all 0.3s ease-in-out;
+}
+
+.hover .gradient1 {
+  stop-color: var(--grad-2);
+}
+
+.hover .gradient2 {
+  stop-color: var(--grad-1);
+}
+
+.foot_mobile {
+  width: 50vw;
+  height: 5vw;
+
+  background: #000 !important;
+  color: aliceblue !important;
+  position: absolute;
+  bottom: 22%;
+  right: 10%;
+}
+
+.img_mobile:hover{
+    transform: scale(.9) translateY(-52px) ; 
+    transition: 2s linear;  
+}
+@media (max-width: 400px) {
+    .redes_mobile{
+        flex-direction: row;
+        width: 150px;
+        height: auto;
+        top: 20vw;
+    }
+}
